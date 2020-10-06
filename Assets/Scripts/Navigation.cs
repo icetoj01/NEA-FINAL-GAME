@@ -1,47 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.SceneManagement;
 
-public class Navigation : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour {
 
+	Rigidbody rb;
 
-// These lines of code detect when a button is clicked and depending on the button takes the user to a separate screen
-	public void  ClickedButtonA(){
-		Debug.Log ("Start clicked!");
+	// Use this for initialization
+	void Start () {
+		rb = GetComponent<Rigidbody> ();
+		rb.freezeRotation = true;
 	}
 
-	public void  ClickedButtonB(){
-		Debug.Log ("Difficulty clicked!");
+	// Once the player collides with a certain tag a specific process will be carried out
+	//void OnCollisionEnter(Collision col)
+	//{
+	//if (col.gameObject.tag == "rightwall"){
+	//	Debug.Log ("I collided with the " + col.gameObject.tag);
+	//}
+	//else if (col.gameObject.tag == "leftWall")
+	//{
+	//	Debug.Log ("I collided with the " + col.gameObject.tag);
+	//}
+
+	//else if (col.gameObject.tag == "floor") {
+	//		Debug.Log ("I collided with the " + col.gameObject.tag);
+	//}
+	//}
+
+	// Update is called once per frame
+	void Update () {
+		if (Input.GetKey (KeyCode.D)) {
+			rb.AddForce (new Vector3 (1, 0, 0), ForceMode.Impulse); }
+
+		if (Input.GetKey (KeyCode.A)) {
+			rb.AddForce (new Vector3 (-1, 0, 0), ForceMode.Impulse); }
+
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			rb.AddForce (new Vector3 (0, 2, 0), ForceMode.Impulse);
+			Debug.Log ("Jump Jump!"); }
 	}
 
-	public void  ClickedButtonC(){
-		Debug.Log ("Quit clicked!");
 
 
-	}
-	public void  ClickedButtonD(){
-		Debug.Log ("Tutorial clicked!");
-
-	//SceneManager loads a chosen scene different from the one that is currently option e.g. an options menu
-		SceneManager.LoadScene(1);
-	}
-
-	public void  ClickedButtonE(){
-		Debug.Log ("Movement clicked!");
-
-		SceneManager.LoadScene(3);
-	}
-
-	public void  ClickedButtonF(){
-		Debug.Log ("Attacking clicked!");
-	}
-
-	public void  ClickedButtonG(){
-		Debug.Log ("Back_Tutorial Clicked clicked!");
-		Debug.Log ("Main menu loaded!");
-
-		SceneManager.LoadScene(0);
-	}
 }
