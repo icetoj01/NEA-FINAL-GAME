@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Navigation.cs" />
      <None Include="Assets\Sprites\Tiles\parallax_mountain_pack\parallax_mountain_pack\license.txt" />
+     <None Include="Assets\Sprites\Tiles\terrain\about.txt" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>X:/NEA/NEA-FINAL-GAME/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

@@ -24,15 +24,24 @@ public class Navigation : MonoBehaviour {
 	public void  ClickedButtonD(){
 		Debug.Log ("Tutorial clicked!");
 
-	//SceneManager loads a different scene from the one that is currently option e.g. an options menu
+	//SceneManager loads a chosen scene different from the one that is currently option e.g. an options menu
 		SceneManager.LoadScene(1);
 	}
 
 	public void  ClickedButtonE(){
 		Debug.Log ("Movement clicked!");
+
+		SceneManager.LoadScene(3);
 	}
 
 	public void  ClickedButtonF(){
 		Debug.Log ("Attacking clicked!");
+	}
+
+	public void  ClickedButtonG(){
+		Debug.Log ("Back_Tutorial Clicked clicked!");
+		Debug.Log ("Main menu loaded!");
+
+		SceneManager.LoadScene(0);
 	}
 }
