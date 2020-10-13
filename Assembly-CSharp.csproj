@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Camera_Follow.cs" />
      <Compile Include="Assets\Scripts\Navigation.cs" />
      <Compile Include="Assets\Scripts\playerMovement.cs" />
      <None Include="Assets\Sprites\Tiles\parallax_mountain_pack\parallax_mountain_pack\license.txt" />
