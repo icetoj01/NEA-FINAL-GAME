@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/* started: session 3 
+ *last edited: session 3
+ *Aim of code: To enable the movement os the player in 4 directions, left, right, up and down (crouch)
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,24 +14,10 @@ public class playerMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
+
+		//freezeRotation prevents the player from being able to roll or change its rotation in any way
 		rb.freezeRotation = true;
 	}
-
-	// Once the player collides with a certain tag a specific process will be carried out
-	//void OnCollisionEnter(Collision col)
-	//{
-	//if (col.gameObject.tag == "rightwall"){
-	//	Debug.Log ("I collided with the " + col.gameObject.tag);
-	//}
-	//else if (col.gameObject.tag == "leftWall")
-	//{
-	//	Debug.Log ("I collided with the " + col.gameObject.tag);
-	//}
-
-	//else if (col.gameObject.tag == "floor") {
-	//		Debug.Log ("I collided with the " + col.gameObject.tag);
-	//}
-	//}
 
 	// Update is called once per frame
 	void Update () {
