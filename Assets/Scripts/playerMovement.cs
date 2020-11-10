@@ -26,12 +26,12 @@ public bool useGravity = true;
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.D)) {
-			rb.AddForce (new Vector3 (6, 0, 0), ForceMode.Impulse);
+			rb.AddForce (new Vector3 (15, 0, 0), ForceMode.Impulse);
 
 		}
 
 		if (Input.GetKey (KeyCode.A)) {
-			rb.AddForce (new Vector3 (-6, 0, 0), ForceMode.Impulse);
+			rb.AddForce (new Vector3 (-15, 0, 0), ForceMode.Impulse);
 
 		}
 
