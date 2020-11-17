@@ -11,6 +11,7 @@ TagManager:
   - user
   - death_zone
   - tutorial_text
+  - temp_wall
   layers:
   - Default
   - TransparentFX
@@ -53,4 +54,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 4254730079
+    locked: 0
+  - name: Water
+    uniqueID: 1040094099
     locked: 0

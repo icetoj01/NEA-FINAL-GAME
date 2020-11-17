@@ -15,6 +15,6 @@ public class Camera_Follow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector3 (player.transform.position.x + 3, 0, -10);
+		transform.position = new Vector3 (player.transform.position.x + 3, 1, -10);
 	}
 }
