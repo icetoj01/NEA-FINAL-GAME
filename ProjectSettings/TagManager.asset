@@ -8,6 +8,9 @@ TagManager:
   - roof
   - floor
   - right_wall
+  - user
+  - death_zone
+  - tutorial_text
   layers:
   - Default
   - TransparentFX

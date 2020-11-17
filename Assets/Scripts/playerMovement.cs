@@ -38,7 +38,7 @@ public bool useGravity = true;
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			rb.AddForce (new Vector3 (0, 200, 0), ForceMode.Impulse);
 			Debug.Log ("Jump Jump!");
-			useGravity = true;
+			//useGravity = true;
 
 		}
 	}
