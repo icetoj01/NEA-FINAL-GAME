@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/* started: session 6
+ *last edited: session 6
+ *Aim of code: To display further instructions and remove old ones after a certain amount of time has passed to allow for the user to continue to learn the mechanics of the game.
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;

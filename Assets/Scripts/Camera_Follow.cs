@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/* started: session 4 
+ *last edited: session 6
+ *Aim of code: To have the camera placed in a fixed postion, only being able to move horizontally no matter if the user changes elevation
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

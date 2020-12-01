@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/* started: session 6 
+ *last edited: session 6
+ *Aim of code: Prevent the user from moving on with the tutorial until each instruction has been given
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

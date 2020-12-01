@@ -18,5 +18,22 @@ public class heroAnimation : MonoBehaviour {
 		else {
 			myAnimator.SetBool ("walk", false);
 	}
+		if (Input.GetKey (KeyCode.Space)) {
+			myAnimator.SetBool ("jump", true);
+		} else {
+			myAnimator.SetBool ("jump", false);
+		}
+
+		if (Input.GetKeyDown (KeyCode.LeftControl)) {
+			myAnimator.SetBool ("crouch", true);
+		} else {
+			myAnimator.SetBool ("crouch", false);
+		}
+
+		if (Input.GetKeyDown (KeyCode.RightArrow)) {
+			myAnimator.SetBool ("standing_jab", true);
+		} else {
+			myAnimator.SetBool ("standing_jab", false);
+		}
 }
 }

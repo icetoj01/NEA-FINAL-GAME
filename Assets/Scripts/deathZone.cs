@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/* started: session 5 
+ *last edited: session 5
+ *Aim of code: To prevent the user from escaping the boundaries of the map and falling indefinitely 
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
