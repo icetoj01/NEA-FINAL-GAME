@@ -27,8 +27,16 @@ public bool useGravity = true;
 	void Update () {
 		if (Input.GetKey (KeyCode.D)) {
 			rb.AddForce (new Vector3 (6, 0, 0), ForceMode.Impulse);
+			useGravity = false;
 
+		} else if (Input.GetKey (KeyCode.Space)) {
+			useGravity = true;
 		}
+
+		else {
+			useGravity = true;
+		}
+
 
 		if (Input.GetKey (KeyCode.A)) {
 			rb.AddForce (new Vector3 (-6, 0, 0), ForceMode.Impulse);
