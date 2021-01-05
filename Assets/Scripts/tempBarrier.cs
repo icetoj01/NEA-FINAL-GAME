@@ -9,7 +9,7 @@ using UnityEngine;
 
 public class tempBarrier : MonoBehaviour {
 	public GameObject tempWall;
-	private float time = 26;
+	private float time = 6;
 
 
 
