@@ -31,9 +31,9 @@ public class heroAnimation : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown (KeyCode.RightArrow)) {
-			myAnimator.SetBool ("standing jab", true);
+			myAnimator.SetBool ("standing_jab", true);
 		} else {
-			myAnimator.SetBool ("standing jab", false);
+			myAnimator.SetBool ("standing_jab", false);
 		}
 }
 }
