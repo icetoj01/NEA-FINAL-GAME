@@ -12,6 +12,9 @@ TagManager:
   - death_zone
   - tutorial_text
   - temp_wall
+  - coin
+  - speedBuff
+  - speedDebuff
   layers:
   - Default
   - TransparentFX

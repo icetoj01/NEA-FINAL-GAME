@@ -24,7 +24,7 @@ public class heroAnimation : MonoBehaviour {
 			myAnimator.SetBool ("jump", false);
 		}
 
-		if (Input.GetKeyDown (KeyCode.LeftControl)) {
+		if (Input.GetKeyDown (KeyCode.LeftControl) )  {
 			myAnimator.SetBool ("crouch", true);
 		} else {
 			myAnimator.SetBool ("crouch", false);
@@ -32,6 +32,7 @@ public class heroAnimation : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.RightArrow)) {
 			myAnimator.SetBool ("standing_jab", true);
+
 		} else {
 			myAnimator.SetBool ("standing_jab", false);
 		}

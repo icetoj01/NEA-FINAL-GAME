@@ -1,1 +1,2 @@
 X:\NEA\NEA-FINAL-GAME\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Joshua Iceton\Documents\GitHub\NEA-FINAL-GAME\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache

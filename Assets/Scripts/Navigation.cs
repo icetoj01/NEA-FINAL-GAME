@@ -25,21 +25,13 @@ public class Navigation : MonoBehaviour {
 	public void  ClickedButtonD(){
 		Debug.Log ("Tutorial!");
 
-		SceneManager.LoadScene (1);
+		SceneManager.LoadScene (3);
 	}
 
 	public void ClickedButtonBack1(){
 		Debug.Log ("Back 1 clicked!");
 		SceneManager.LoadScene (0);
 	}
-
-	public void  ClickedButtonE(){
-		Debug.Log ("Movement Tutorial!");
-		SceneManager.LoadScene (3);
-	}
-
-	public void  ClickedButtonF(){
-		Debug.Log ("Attacking Tutorial!");
-	}
+		
 
 }
