@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera_Follow.cs" />
      <Compile Include="Assets\Scripts\deathZone.cs" />
+     <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\heroAnimation.cs" />
      <Compile Include="Assets\Scripts\Navigation.cs" />
      <Compile Include="Assets\Scripts\playerMovement.cs" />

@@ -12,6 +12,7 @@ public class playerMovement : MonoBehaviour {
 	private float speed;
 	private float boostTimer;
 	private bool boosting;
+	private bool slowing;
 
 	Rigidbody rb;
 
@@ -25,10 +26,13 @@ public class playerMovement : MonoBehaviour {
 		speed = 1;
 		boostTimer = 0;
 		boosting = false;
+		slowing = false;
+
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
 		if (Input.GetKey (KeyCode.D)) {
 			rb.AddForce (new Vector3 (speed, 0, 0), ForceMode.Impulse);
 
@@ -41,11 +45,19 @@ public class playerMovement : MonoBehaviour {
 
 		if (boosting) {
 			boostTimer += Time.deltaTime;
-			if (boostTimer >= 10)
-			{
+			if (boostTimer >= 10) {
 				speed = 1;
 				boostTimer = 0;
 				boosting = false;
+			}
+		}
+
+		if (slowing) {
+			boostTimer += Time.deltaTime;
+			if (boostTimer >= 10) {
+				speed = 1;
+				boostTimer = 0;
+				slowing = false;
 			}
 		}
 			
@@ -59,11 +71,21 @@ public class playerMovement : MonoBehaviour {
 	}
 
 
+
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.tag == "speedBuff") {
 			boosting = true;
 			speed = 2;
+			Destroy (other.gameObject);
+		}
+	
+
+
+	{
+		if (other.tag == "speedDebuff") {
+			slowing = true;
+				speed = speed/2;
 			Destroy (other.gameObject);
 		}
 	}
@@ -72,10 +94,8 @@ public class playerMovement : MonoBehaviour {
 
 
 
-
-
-
 	}
+}
 
 
 
